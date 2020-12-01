@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: lightblue;
+    background-image:  url("/images/bk.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+footer{
+    padding: 2rem 0 4rem 0;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    text-align: center;
+    line-height: 1;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3{
+    font-size: 3.5rem;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-main{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+}
+
+img{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+p{
+    font-size: 1rem;
+    color: gray;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        padding: 12rem 0;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    .grid{
+        gap: 2rem;
+    }
+    
+    .grid-main{
+        padding: 2rem;
+    }
+    .grid-1, .grid-2{
+        grid-template-columns: 1fr 1.563fr;
+    }
+    
+    .grid-3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    h1{
+        font-size: 6vw;
+    }
+}
