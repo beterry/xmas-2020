@@ -5,7 +5,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    ;
+    color: rgba(0, 0, 0, 0.925);
 }
 
 h1 {
@@ -18,11 +18,14 @@ h1 {
 }
 
 h2 {
+    font-weight: 600;
     margin-top: 8px;
+    font-size: 1.35rem;
 }
 
 h3.card-title {
     margin: 16px 0 6px 0;
+    line-height: 1.25;
 }
 
 h4 {
